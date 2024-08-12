@@ -1,0 +1,15 @@
+1- mkdir Ali
+2- touch Ali/one.txt Ali/two.txt Ali/three.txt Ali/four.txt
+3- mkdir BAD
+   touch Ali/BAD/bad.txt
+4- mv Ali/one.txt Downloads/
+5- cd Downloads
+   cp one.txt copy.txt
+6- cd ~/Ali
+7- nano two.txt 
+   (inside we write "Ali" then we save and exit)
+8- nano three.txt
+   (inside we copy and paste the long text then we save and exit)
+9- mv three.txt hello.txt
+10- rm four.txt
+11- rm -r BAD
