@@ -1,6 +1,6 @@
 1- mkdir Ali
 2- touch Ali/one.txt Ali/two.txt Ali/three.txt Ali/four.txt
-3- mkdir BAD
+3- mkdir Ali/BAD
    touch Ali/BAD/bad.txt
 4- mv Ali/one.txt Downloads/
 5- cd Downloads
