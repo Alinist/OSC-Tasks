@@ -1,0 +1,19 @@
+1- git config --global user.name "Alinist"
+   git config --global user.email "alyashrafelprince2004@gmail.com"
+2- git clone https://github.com/Alinist/OSC-Tasks Ali
+3- cd Ali
+   mkdir task-2
+4- cd task-2
+   touch greeting.txt
+5- echo hello world >> greeting.txt
+6- git add .
+   git commit -m "Added greeting"
+7- git branch intro
+   git checkout intro
+8- echo I love Git >> greeting.txt
+9- git add .
+   git commit -m "Added I love Git"
+10- git checkout main
+    git merge intro
+11- git tag -a v1 (type tag message)
+12- git push -u origin --all
