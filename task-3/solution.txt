@@ -1,0 +1,31 @@
+1- mkdir project_files
+2- mkdir project_files/reports project_files/logs project_files/data
+3- cd project_files/reports/
+   touch report1.md report2.md
+4- cd ~/project_files/logs/
+   touch system.log error.log file1.pdf file2.pdf
+5- touch ~/project_files/data/data.csv ~/project_files/data/info.txt
+6- nano ~/project_files/reports/report1.md (add random text)
+   nano ~/project_files/logs/system.log (add random text)
+   nano ~/project_files/data/data.csv (add random text)
+7- tar -cf logs_backup.tar *
+8- mv logs_backup.tar ~/project_files/
+9- tar -xf ~/project_files/logs_backup.tar -C ~/project_files/logs
+10- find ~ -name "*.md"
+11- find ~/project_files/ -name "*.log"
+12- find ~/project_files/ -name "file1.pdf"
+13- find ~/project_files/ -iname "*.pdf"
+14- find ~/project_files/logs/ -name "*.*"
+15- ln -s ~/project_files/data/data.csv ~/project_files/link_data.csv
+16- cat ~/project_files/data/data.csv (output : Data 1)
+    echo "Hello World" > ~/project_files/link_data.csv
+    cat ~/project_files/data/data.csv (output : Hello World)
+17- unlink ~/project_files/link_data.csv
+18- touch ~/project_files/summary.txt
+    echo "Summary Start" > ~/project_files/summary.txt
+19- date >> ~/project_files/summary.txt
+20- wc -l < ~/project_files/summary.txt | tee -a ~/project_files/summary.txt
+21- wc -w < ~/project_files/reports/report1.md
+22- wc -c < ~/project_files/logs/system.log | tee -a ~/project_files/summary.txt
+23- ls ~/project_files/ | wc -l | tee -a ~/project_files/summary.txt
+24- cat ~/project_files/summary.txt
