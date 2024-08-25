@@ -1,0 +1,2 @@
+1- grep -o "[[:alnum:]]*@[[:alnum:]]*.com" info.csv | sort | uniq | tee emails.txt 
+2- ps -eo pid,cmd --sort cmd | tee processes.txt
